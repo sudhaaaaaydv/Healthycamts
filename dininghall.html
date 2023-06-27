@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" media="all" href="css/styling_dining.css">
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</head>
+
+<body id="content">
+	<div id="topbar">
+		<a href="content.html">Back to Main Menu</a>
+	</div>
+
+	<div class="choose"> 
+		<b>Sargent Dining Hall</b>
+	</div>
+	<div class="choosemeal">
+		<p>Make your own meal</p>
+	</div>
+	<div class="chooseitem">
+		<form action="/action_page.php" method="get" id="food">
+			<div>
+				<div class="items"><h>Protein<br></div>
+					<input type="checkbox" name="protein" value="" class="checkbox">Grilled Chicken<br>
+					<input type="checkbox" name="protein" value="" class="checkbox">Turkey<br>
+					<input type="checkbox" name="protein" value="" class="checkbox">Steak<br>
+					<input type="checkbox" name="protein" value="" class="checkbox">Tofu<br>
+			</div>
+		</form> 
+		<form action="/action_page.php" method="get" id="food">
+			<div>
+				<div class="items"><h>Carbohydrate<br></div>
+					<input type="checkbox" name="carbohydrate" value="" class="checkbox">Brown Rice<br>
+					<input type="checkbox" name="carbohydrate" value="" class="checkbox">Burger Bun<br>
+					<input type="checkbox" name="carbohydrate" value="" class="checkbox">Wheat Pasta<br>
+					<input type="checkbox" name="carboyhdrate" value="" class="checkbox">Quinoa<br>
+			</div>
+		</form>
+		<form action="/action_page.php" method="get" id="food">
+			<div>
+				<div class="items"><h>Vegetable<br></div>
+					<input type="checkbox" name="vegetable" value="" class="checkbox">Diced Tomatoes<br>
+					<input type="checkbox" name="vegetable" value="" class="checkbox">Baby Arugula<br>
+					<input type="checkbox" name="vegetable" value="" class="checkbox">Broccoli<br>
+					<input type="checkbox" name="vegetable" value="" class="checkbox">Green Beans<br>
+					<input type="checkbox" name="vegetable" value="" class="checkbox">Sauteed Spinach<br>
+					<input type="checkbox" name="vegetable" value="" class="checkbox">Roasted Potatoes<br>
+					<input type="checkbox" name="vegetable" value="" class="checkbox">Salad Bar<br>
+			</div>
+		</form>
+		<form action="/action_page.php" method="get" id="food">
+			<div>
+				<div class="items"><h>Dessert<br></div>
+					<input type="checkbox" name="dessert" value="" class="checkbox">Banana<br>
+					<input type="checkbox" name="dessert" value="" class="checkbox">Apple<br>
+					<input type="checkbox" name="dessert" value="" class="checkbox">Yogurt Berry Parfait<br>
+			</div>
+		</form>
+		<form action="submit_meal.html" method="GET" id="submit" enctype="multipart/form-data">
+				<input type="submit" value="Submit">
+		</form>
+	</div>
+
+</body>
+
